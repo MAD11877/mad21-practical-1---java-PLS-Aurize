@@ -27,6 +27,25 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int mode = 0;
+    int highest_count = 0;
+    int number = in.nextInt();
+    int[] numbers = new int[number];
+    for (int i = 0; i < number; i++){
+      numbers[i] = in.nextInt();
+    }
+    for (int i : numbers){
+      int current_count = 0;
+      for (int current_number : numbers){
+        if (current_number == i){
+          current_count++;
+        }
+      }
+      if (current_count > highest_count){
+        highest_count = current_count;
+        mode = i;
+      }
+    }
+    System.out.println(mode);
   }
 }
