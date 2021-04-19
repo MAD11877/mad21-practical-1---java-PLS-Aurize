@@ -27,7 +27,6 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter number of integers you want to enter. ");
     int mode = 0;
     int highest_count = 0;
     int number = in.nextInt();
