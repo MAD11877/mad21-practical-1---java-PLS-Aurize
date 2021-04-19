@@ -46,6 +46,6 @@ public class Question5
         mode = i;
       }
     }
-    System.out.println("Mode: " + mode);
+    System.out.println(mode);
   }
 }
